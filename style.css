@@ -1,0 +1,13 @@
+#control_panel{
+    text-align: center;
+}
+#number_entered{
+    text-align: center;
+    width: 100px;
+    height: 50px;
+}
+#insertion{
+    text-align: center;
+    width: 100px;
+    height: 55px;
+}
