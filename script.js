@@ -6,7 +6,7 @@ let total_elements_in_array = 0;
 
 function transport(newNode, textNode) {
     const insertButton = document.getElementById("insertion");
-    const deleteButton = document.getElementById("delet");
+    const deleteButton = document.getElementById("deletion");
     insertButton.disabled = true; 
     deleteButton.disabled = true;
     animationIntervalY = setInterval(() => animateY(newNode, textNode), 20);
