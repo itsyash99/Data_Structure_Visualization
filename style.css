@@ -1,13 +1,82 @@
-#control_panel{
-    text-align: center;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
 }
-#number_entered{
-    text-align: center;
-    width: 100px;
-    height: 50px;
+
+svg {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #ffffff;
+    background-color: black;
 }
-#insertion{
+
+#control_panel {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background: #403e3e;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 100px;
-    height: 55px;
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+}
+
+#number_entered {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#number_entered:focus {
+    border-color: #2a5298;
+    box-shadow: 0 0 8px rgba(42, 82, 152, 0.5);
+}
+
+button {
+    width: 120px;
+    height: 45px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    border: 4px solid white;
+    border-radius: 8px;
+}
+
+button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+#insertion {
+    background-color: #4CAF50;
+}
+
+#insertion:hover:not(:disabled) {
+    background-color: #3e8e41;
+}
+
+#deletion {
+    background-color: #f44336;
+}
+
+#deletion:hover:not(:disabled) {
+    background-color: #d32f2f;
 }
